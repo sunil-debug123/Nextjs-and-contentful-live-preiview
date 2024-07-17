@@ -10,6 +10,7 @@ export async function getAuthors({preview = false}) {
       query {
         authorCollection{
           items{
+            __typename
             sys{id}
             firstName
             lastName
