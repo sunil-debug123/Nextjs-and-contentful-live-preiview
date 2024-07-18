@@ -14,7 +14,11 @@ export async function getAuthors({preview = false}) {
             sys{id}
             firstName
             lastName
-            city
+            bio
+            occupation
+            profilePic {
+              url
+            }
           }
         }
       }
