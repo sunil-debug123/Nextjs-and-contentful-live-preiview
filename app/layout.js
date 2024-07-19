@@ -6,9 +6,10 @@ export const metadata = {
   title: "Live Preview Example",
 };
 
+/* Uncomment this and set up the revalidation of your server pages as needed. */
+// export const revalidate = 300;
+
 export default function RootLayout({ children }) {
-  const linkClassname =
-    "whitespace-nowrap mr-2 py-2 px-4 cursor-pointer rounded-xl bg-yellow-300 hover:bg-yellow-500";
 
   return (
     <html lang="en">

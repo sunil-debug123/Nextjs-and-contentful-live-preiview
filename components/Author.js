@@ -6,7 +6,7 @@ export default function Author({ data }) {
         <div className="mb-16">
             <dh-component>
                 <div className="container mx-auto pt-16 text-center">
-                    <div className="pb-8">
+                    <div className="pb-12">
                         <p className="text-contentful-blue text-lg font-normal pb-3">
                             Contentful Live Preview Demo
                         </p>
