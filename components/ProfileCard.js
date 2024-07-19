@@ -13,23 +13,23 @@ import {
 import React from "react";
 
 export default function ProfileCard({ author }) {
-    // const livePost = useContentfulLiveUpdates(author);
+    const livePost = useContentfulLiveUpdates(author);
     const inspectorProps = useContentfulInspectorMode({ entryId: author?.sys?.id });
 
     return (
         <div className="max-w-sm w-full bg-gray-100 px-6 pt-6 rounded-lg shadow-lg">
             <div className="relative flex justify-center -mt-16">
                 <div className="h-32 w-32">
-                    <img {...inspectorProps({ fieldId: 'profilePic' })} src={author?.profilePic?.url} alt={author?.firstName} role="img" className="rounded-full object-cover h-full w-full shadow-md" />
+                    <img {...inspectorProps({ fieldId: 'profilePic' })} src={livePost?.profilePic?.url} alt={livePost?.firstName} role="img" className="rounded-full object-cover h-full w-full shadow-md" />
                 </div>
             </div>
             <div className="px-6 mt-16 text-center">
                 <h1 className="font-bold text-3xl mb-1" {...inspectorProps({ fieldId: 'firstName' })}>
-                    {author?.firstName}
+                    {livePost?.firstName}
                 </h1>
-                <p className="text-gray-800 text-sm" {...inspectorProps({ fieldId: 'occupation' })}>{author?.occupation}</p>
+                <p className="text-gray-800 text-sm" {...inspectorProps({ fieldId: 'occupation' })}>{livePost?.occupation}</p>
                 <p className="text-gray-600 text-base pt-3 font-normal" {...inspectorProps({ fieldId: 'bio' })}>
-                    {author?.bio}
+                    {livePost?.bio}
                 </p>
             </div>
         </div>
