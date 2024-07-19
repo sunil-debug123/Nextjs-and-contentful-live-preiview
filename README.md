@@ -72,5 +72,6 @@ Let me know if you need any more changes!
     
 
 # License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE file](https://raw.githubusercontent.com/sunil-debug123/Nextjs-and-contentful-live-preiview/main/LICENSE.txt) for details.
+
 
