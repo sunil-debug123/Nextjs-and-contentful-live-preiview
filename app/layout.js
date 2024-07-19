@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning={true}>
         <div className="bg-blue-200 w-full">
           <div className="flex flex-row px-4 md:px-20 lg:px-40 py-10">
           </div>

@@ -5,9 +5,7 @@ export default async function Home() {
   const items = await getAuthors(false);
   return (
     <div className="flex justify-center items-center h-screen">
-      {items.map((entry) => (
-        <Author data={entry} key={entry?.sys?.id}/>
-      ))}
+        <Author data={items} />
     </div>
   );
 }
