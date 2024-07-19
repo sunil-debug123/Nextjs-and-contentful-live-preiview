@@ -10,6 +10,7 @@ import {
     useContentfulInspectorMode,
     useContentfulLiveUpdates,
 } from '@contentful/live-preview/react';
+import Image from 'next/image';
 import React from "react";
 
 export default function ProfileCard({ author }) {
@@ -20,7 +21,7 @@ export default function ProfileCard({ author }) {
         <div className="max-w-sm w-full bg-gray-100 px-6 pt-6 rounded-lg shadow-lg">
             <div className="relative flex justify-center -mt-16">
                 <div className="h-32 w-32">
-                    <img {...inspectorProps({ fieldId: 'profilePic' })} src={livePost?.profilePic?.url} alt={livePost?.firstName} role="img" className="rounded-full object-cover h-full w-full shadow-md" />
+                    <Image width={100} height={100} {...inspectorProps({ fieldId: 'profilePic' })} src={livePost?.profilePic?.url} alt={livePost?.firstName} role="img" className="rounded-full object-cover h-full w-full shadow-md" />
                 </div>
             </div>
             <div className="px-6 mt-16 text-center">
